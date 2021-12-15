@@ -15,7 +15,7 @@ body{
 
 .container{
     width:1440px;
-    margin: 0 auto;
+    margin:auto;
 }
 
 .header{
@@ -26,14 +26,14 @@ body{
 }
 
 .nav{
- padding:70px;
+ padding:80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
 .nav img{
-    margin-right:750px;
+    margin-right:600px;
 }
 
 .navbar{
@@ -79,8 +79,8 @@ body{
     margin-top:20px ;
     width:210px;
     height: 40px;
-    background-color:hsl(176, 68%, 64%) ;
-    border-radius: 20px;
+    background:linear-gradient(to right,hsl(176, 68%, 64%),  hsl(198, 60%, 50%));
+    border-radius: 50px;
     border:none;
     padding: 5px;
    padding-top: 10px;
@@ -153,14 +153,15 @@ body{
 }
 
 .link{
-    margin-top: 15px;    /* flex???*/
-   
+    margin-top: 15px;  
 }
 
 
 .link a{
     color:hsl(176, 68%, 64%);
-    text-decoration:underline;
+    text-decoration: none;
+    border-bottom:1px solid hsl(176, 68%, 64%) ;
+   
 }
 
 .users-quotes{
@@ -276,7 +277,7 @@ body{
         font-size: 12px;
         width:150px;
         height: 30px;
-        background-color:hsl(176, 68%, 64%) ;
+        background:linear-gradient(to right,hsl(176, 68%, 64%),  hsl(198, 60%, 50%));
         border-radius: 20px;
         border:none;
         padding: 5px;
@@ -285,16 +286,24 @@ body{
        text-align: center;
     }
 
+    #submit:hover{
+        opacity: 0.5;
+    }
+
     footer{
         display: flex;
         flex-direction: column;
         align-items:flex-start;
+        justify-content:start;
         margin:auto;
-        background-color: hsl(216, 53%, 9%);
+        background-color: hsl(240, 33%, 1%);
+        background-position: 100%;
         padding:10px;
         text-align: center;
         padding-top: 100px;
         margin-top:100px;
+        
+        
 
     }
 
@@ -372,16 +381,336 @@ body{
 
     .attribution{
         margin-top: 100px;
-      
         margin:auto;
         
     }
 
-   
+    
 
+        
+    @media only screen and (max-width:385px){
+        
+        body{
+            margin:0 auto;
+        }
+
+        .nav {
+            justify-content:center;
+            align-items: center;
+        }
+
+        .navbar li a{
+            font-size: 35px;
+        }
+
+        .navbar li{
+            margin-right:35px;
+        }
+
+        .nav img{
+            margin-left: 40px;
+            width: 250px;
+            height: 150px;
+            margin-right:270px;
+        }
+
+        .header-content img{
+            height: 500px;
+            width:550px;
+        }
+
+        .header-content{
+            font-size: 37px;
+
+        }
+
+                
+        .header-content h1{
+            font-weight: 700;
+            width:780px;
+            margin-top: 40px;
+            
+        }
+
+        .header-content p{
+            margin-top: 40px;
+            line-height: 60px;
+            width:750px;
+        }
+
+        .button{
+            margin-top:30px ;
+            width:500px;
+            height: 110px;
+            padding:50px;
+           font-size: 35px;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+    
+            
+        }
+
+        .feature-rows{
+            width:700px;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        .logo{
+            margin-top: 70px;
+        }
+
+        .logo h2{
+            margin-top: 70px;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .logo p{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        .logo img{
+            width:210px;
+            height: 210px;
+        }
+        
+        .Stay-productive{
+            /* width:1000px;
+            margin:auto;
+            display: flex; */
+            flex-direction: column;
+            /* align-items: center; */
+            margin-top: 50px;
+            
+        }
+
+        .pic1{
+            width: 550px;
+            height: 450px
+        }
+
+        .Stay-productive h3{
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .Stay-productive p{
+            font-size: 30px;
+            width:700px;
+            line-height: 35px;
+        }
+
+        .link{
+            font-size: 27px;
+            padding: 2px;
+        }
+
+        .quotes-div{
+            flex-direction: column;
+            justify-content: center;
+           align-items: center;
+        }
+
+        .quotes{
+            margin-top: 30px;
+            width:700px;
+            font-size: 30px;
+            padding:50px;
+        }
+
+        .quotes h4{
+            font-size: 32px;
+        }
+
+        .description{
+            margin-top: 50px;
+        }
+        .description img{
+            width:100px;
+            height:100px;
+        }
+
+        .description p{
+            font-size: 22px;
+        }
+
+        .picquote{
+            position: absolute;
+            transform: translate(110px,-10px);
+            z-index: 3;
+        }
+
+        .get-early{ /*orderrr*/
+           margin-top:200px;
+            width:700px;         
+          transform: translate(170px,-200px);
+          text-align: center;
+          padding:40px;
+          
+        }
+
+        .get-early h1{
+            font-size: 30px;
+        }
+
+        .get-early p{
+            font-size: 26px;
+            
+        }
+
+
+        .buttom-get-early{
+            flex-direction: column;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+       
+        #emailtext{
+            width:400px;
+            height:40px;
+        
+            padding:30px;
+        }
+    
+        #submit{
+            font-size: 20px;
+            width:400px;
+            height: 40px;
+            border-radius: 50px;
+            padding: 30px;
+           margin-top:30px;
+        }
     
 
 
+
+
+    
+
+        footer{
+            margin-top: 580px;
+           display: flex;
+           flex-direction: column;
+           /* align-items: center; */
+           justify-content: flex-start;
+           /* margin:auto; */
+           margin-inline-start: 250px;
+           background-color:hsl(217, 28%, 15%);
+           align-items: flex-start;
+       }
+
+       .fylologo{
+           width:280px;
+           height:150px;
+           
+           transform: translateX(-120px);
+       }
+
+       .main-footer{
+           display:flex;
+           flex-direction: column;
+           /* justify-content: flex-start; */
+           text-align: left;
+           align-items: flex-start;
+           text-align: left;
+           margin-right: 300px;
+       }
+
+       .footers{
+           font-size: 32px;
+           margin-top:30px;
+       }
+
+       .location{
+           justify-content: flex-start;
+           align-items:flex-start;
+
+       }
+
+       .location img{
+           margin-top: 20px;
+           margin-right: 30px;
+           width:30px;
+           height: 40px;
+       }
+
+       .contact img{
+        width:30px;
+        height: 40px;
+       }
+
+       .contact{
+           margin-top:50px;
+       }
+
+       .email img{
+           margin-right: 30px;
+          
+       }
+
+       .email{
+        margin-top: 30px;
+       }
+
+       .about-us{
+           margin-top: 90px;
+       }
+
+       .about-us li{
+           margin-top:30px;
+       }
+
+       .terms{
+        margin-top: 90px;
+       }
+
+       .terms li{
+        margin-top:30px;
+        }
+
+        .social-media{
+            margin-top: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+            margin-left: 250px;
+            margin-top: 100px;
+            /* margin-inline-start:200px; */
+        }
+
+        .circle{
+            margin-right: 30px;
+            width: 70px;
+            height: 70px;
+        
+        }
+
+        .attribution{
+            width:700px;
+            color:white;
+            display: inline;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin:auto;
+            
+        }
+
+
+
+
+
+       
+    }
+
+
+   
 
 
 
