@@ -123,7 +123,6 @@ body{
     width:1000px;
     margin:auto;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-top: 50px;
     
@@ -346,7 +345,7 @@ body{
 
     .email{
         display: flex;
-        justify-content: space-between;    /*change spaces*/
+        justify-content: space-between;  
         margin-top: 10px;
     }
 
@@ -382,7 +381,6 @@ body{
     .attribution{
         margin-top: 100px;
         margin:auto;
-        
     }
 
     
@@ -397,6 +395,13 @@ body{
         .nav {
             justify-content:center;
             align-items: center;
+        }
+
+        .header{
+            background-image: url(./images/bg-curvy-mobile.svg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 120% 350px;
         }
 
         .navbar li a{
@@ -479,11 +484,7 @@ body{
         }
         
         .Stay-productive{
-            /* width:1000px;
-            margin:auto;
-            display: flex; */
             flex-direction: column;
-            /* align-items: center; */
             margin-top: 50px;
             
         }
@@ -597,9 +598,7 @@ body{
             margin-top: 580px;
            display: flex;
            flex-direction: column;
-           /* align-items: center; */
            justify-content: flex-start;
-           /* margin:auto; */
            margin-inline-start: 250px;
            background-color:hsl(217, 28%, 15%);
            align-items: flex-start;
@@ -615,7 +614,6 @@ body{
        .main-footer{
            display:flex;
            flex-direction: column;
-           /* justify-content: flex-start; */
            text-align: left;
            align-items: flex-start;
            text-align: left;
@@ -680,9 +678,8 @@ body{
             align-items: center;
             justify-content: center;
             margin:auto;
-            margin-left: 250px;
+            margin-left: 320px;
             margin-top: 100px;
-            /* margin-inline-start:200px; */
         }
 
         .circle{
