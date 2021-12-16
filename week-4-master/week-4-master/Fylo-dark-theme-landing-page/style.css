@@ -545,7 +545,7 @@ body{
             z-index: 3;
         }
 
-        .get-early{ /*orderrr*/
+        .get-early{
            margin-top:200px;
             width:700px;         
           transform: translate(170px,-200px);
